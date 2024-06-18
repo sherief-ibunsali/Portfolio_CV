@@ -251,6 +251,10 @@
     .icons i{
         font-size: 28px;
     }
+    .myskills__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
 
 @media only screen and (max-width:550px){
@@ -258,4 +262,10 @@
         width: 100%;
         height: auto;
     }
+
+    .contact__container{
+        justify-content: center;
+        justify-items: center;
+    }
+   
 }

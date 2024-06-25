@@ -163,7 +163,7 @@
     .resume__box {
         max-width: 350px;
         padding: 30px;
-        height: 400px;
+        /* height: 400px; */
     }
 
     .box__degree{
@@ -210,7 +210,6 @@
     .resume__box {
         max-width:500px;
         padding: 30px;
-       height: 300px;
     }
 
     .resume__container{
@@ -268,4 +267,74 @@
         justify-items: center;
     }
    
+.projects__details {
+    width: 100%;
+    height: 400px;
+}
+}
+
+
+
+@media only screen and (max-width:440px){
+
+.copy__rights .copy__rights--text{
+    font-size: 12px;
+}
+}
+
+@media only screen and (max-width:420px){
+    .contact__container {
+        display: grid;
+        grid-template-columns: 360px;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .services__box{
+        width: 290px;
+    }
+    .resume__experience{
+        height: 430px;
+    }
+    .projects__details {
+        width: 100%;
+        height: 380px;
+    }
+    .box__degree {
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width:370px) {
+    .resume__experience{
+        height: 430px;
+    }
+    .contact__container {
+        display: grid;
+        grid-template-columns: 290px;
+        justify-items: center;
+        justify-content: center;
+    }
+    .icons__container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .personal__text p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width:340px) {
+    .resume__experience{
+        height: 470px;
+    }
+    .personal__text p {
+        font-size: 12px;
+    }
+    
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/resume.css" />
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -44,8 +45,12 @@
           <h1 class="img__container--lname"><span>SHERIEF</span></h1>
           <h2 class="img__container--position">A Front-end Developer</h2>
           <div class="img__container--btn">
+           <a href="#contact" style="text-decoration: none; list-style: none;">
             <button class="btn--hire">Hire me</button>
-            <button class="btn--works">My works</button>
+           </a>
+            <a href="#projects" style="text-decoration: none; list-style: none;">
+              <button class="btn--works">My works</button>
+            </a>
           </div>
         </div>
         <div class="img__container--img hidden">
@@ -68,14 +73,12 @@
           <div class="about__details--personal">
             <div class="personal__head">
               <p>Name:</p>
-              <p>Date of Birth:</p>
               <p>Address:</p>
               <p>Email:</p>
               <p>Phone:</p>
             </div>
             <div class="personal__text">
               <p>Mohammed Sherief I</p>
-              <p>June 07, 2002</p>
               <p>Kumbakonam, Tamil Nadu, India.</p>
               <p>mdsheriefibunsali@gmail.com</p>
               <p>+91 8778723349</p>
@@ -84,7 +87,9 @@
           <p class="about__details--project">
             <span>10</span> Projects Completed
           </p>
-          <button class="btn--hire">DOWNLOAD CV</button>
+          <a href="CV/sherief.pdf" style="text-decoration: none;" download>
+            <button class="btn--hire">DOWNLOAD CV</button>
+          </a>
         </div>
       </section>
       <section class="resume hidden" id="resume">
@@ -96,7 +101,7 @@
             <div class="box__university">BHARATHIDASAN UNIVERSITY</div>
             <div class="box__percentage"><span>Percentage:</span> 72%</div>
           </div>
-          <div class="resume__box">
+          <div class="resume__box resume__experience">
             <span class="box__year">Jul 2023 - Jan 2024</span>
             <h2 class="box__degree">Trainee Software Developer</h2>
             <div class="box__university">EXTRIVE TECHNOLOGIES</div>
@@ -128,7 +133,9 @@
          
         </div>
         <div class="cv__btn--container">
-          <button class="btn--hire">DOWNLOAD CV</button>
+          <a href="CV/sherief.pdf" style="text-decoration: none;" download>
+            <button class="btn--hire">DOWNLOAD CV</button>
+          </a>
         </div>
       </section>
       <section class="services hidden" id="service">
@@ -150,58 +157,96 @@
       </section>
       <section class="myskills hidden" id="skills">
         <h2 class="services__title">My Skills</h2>
-        <div class="myskills__container">
-          <div class="myskills__box">
-            <div class="myskills__lng">
-              <h3>HTML</h3>
-              <p class="percentage">95%</p>
+       
+        <div class="myskills">   
+          <div class="sampleMyskills__container ">
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <img src="./skills-img/HTML.png" alt="" class="skills__img">
+                </div>
+                <div class="skillImg__text">
+                  <p>HTML</p>
+                </div>
+              </div>
             </div>
-            <div class="background">
-              <div class="background__html"></div>
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <!-- <img src="" alt="" class="skills__img"> -->
+                  <img class="skills__img" src="data:image/png;base64,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" alt="CSS" style="max-width: 100%;">
+          
+                </div>
+                <div class="skillImg__text">
+                  <p>CSS</p>
+                </div>
+              </div>
             </div>
-
-            <div class="myskills__lng">
-              <h3>CSS</h3>
-              <p class="percentage">90%</p>
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <!-- <img src="./skills-img/bootstrap-removebg-preview.png" alt="" class="skills__img"> -->
+          
+          <img class="skills__img" src="data:image/png;base64,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" alt=" Bootstrap" style="max-width: 100%;">
+          
+                </div>
+                <div class="skillImg__text">
+                  <p>Bootstrap</p>
+                </div>
+              </div>
             </div>
-            <div class="background">
-              <div class="background__css"></div>
+          
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <img src="https://dinakaran.netlify.app/assets/javascript-CZQ9qdMR.png" alt="JavaScript" class="skills__img" style="max-width: 100%;">
+                </div>
+                <div class="skillImg__text">
+                  <p>JavaScript</p>
+                </div>
+              </div>
             </div>
-
-            <div class="myskills__lng">
-              <h3>Bootstrap</h3>
-              <p class="percentage">80%</p>
+          
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <img src="https://dinakaran.netlify.app/assets/react-CpIRKijl.png" alt="ReactJS" class="skills__img" style="max-width: 100%;">
+                </div>
+                <div class="skillImg__text">
+                  <p>ReactJS</p>
+                </div>
+              </div>
             </div>
-            <div class="background">
-              <div class="background__boot"></div>
+          
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <img src="./skills-img/java.png" alt="" class="skills__img">
+                </div>
+                <div class="skillImg__text">
+                  <p>Java</p>
+                </div>
+              </div>
             </div>
+          
+            <div class="skill__box">
+              <div class="img__box">
+                <div>
+                  <img src="./skills-img/flutter3.png" alt="" class="skills__img" style="max-width: 100%;">
+                </div>
+                <div class="skillImg__text">
+                  <p>Flutter</p>
+                </div>
+              </div>
+            </div>
+          
+          </div> 
           </div>
-          <div class="myskills__box">
-            <div class="myskills__lng">
-              <h3>JavaScript</h3>
-              <p class="percentage">80%</p>
-            </div>
-            <div class="background">
-              <div class="background__js"></div>
-            </div>
-
-            <div class="myskills__lng">
-              <h3>React.js</h3>
-              <p class="percentage">70%</p>
-            </div>
-            <div class="background">
-              <div class="background__react"></div>
-            </div>
-
-            <div class="myskills__lng">
-              <h3>Java</h3>
-              <p class="percentage">65%</p>
-            </div>
-            <div class="background">
-              <div class="background__java"></div>
-            </div>
-          </div>
-        </div>
       </section>
       <section class="projects hidden" id="projects">
         <h2 class="services__title">My Projects</h2>
@@ -216,14 +261,14 @@
            <div class="projects__details">
             <img src="./project_Img/bank.png" />
             <h3>Bankiest</h3>
-             <p> Designed a website for nature lovers, those who wish to visit nature places with advanced CSS.
+             <p> Designed a imaginary bank to store user ammount and details by arrays with HTML, CSS and JavaScript.
              </p>
           </div>
 
           <div class="projects__details">
             <img src="./project_Img/react-table.png" />
             <h3>React Table</h3>
-             <p> Designed a website for nature lovers, those who wish to visit nature places with advanced CSS.
+             <p> Built a simple table to store all user expenses and things when they buy from shops with ReactJS.
              </p>
           </div>
 
@@ -231,7 +276,7 @@
           <div class="projects__details">
             <img src="./project_Img/guess-my-num.png" />
             <h3>Guess My Number</h3>
-             <p> Designed a website for nature lovers, those who wish to visit nature places with advanced CSS.
+             <p> Designed a game to guess number in order to make entertain user by using HTML, CSS and JavaScript.
              </p>
           </div>
 
@@ -239,7 +284,7 @@
           <div class="projects__details">
             <img src="./project_Img/resume-builder.png" />
             <h3>Resume Builder</h3>
-             <p> Designed a website for nature lovers, those who wish to visit nature places with advanced CSS.
+             <p> Designed a page to create resume for users with HTML, CSS and JavaScript.
              </p>
           </div>
         </div>
@@ -251,13 +296,13 @@
             <img src="./Img/img3.jpg" alt="">
           </div>
           <div class="contact__form">
-           <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" rows="7" cols="30" placeholder="Message"></textarea>
-          <button class="btn--submit">Send Message</button>
-            </form>
+            <form id="contactForm" action="">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="7" cols="30" placeholder="Message" required></textarea>
+            <button class="btn--submit" type="submit">Send Message</button>
+        </form>
           </div>
         </div>
       </section>
@@ -277,9 +322,64 @@
         </a>
        </div>
       <div class="copy__rights">
-        <p class="copy__rights--text">Copyright &copy; 2024 All the rights reserved | This is template is made by Mohammed Sherief</p>
+        <p class="copy__rights--text">Copyright &copy; 2024 All the rights reserved | This webpage is made by Mohammed Sherief</p>
       </div>
     </div>
     </footer>
   </body>
 </html>
+
+
+
+<!-- <div class="myskills__container">
+  <div class="myskills__box">
+    <div class="myskills__lng">
+      <h3>HTML</h3>
+      <p class="percentage">95%</p>
+    </div>
+    <div class="background">
+      <div class="background__html"></div>
+    </div>
+
+    <div class="myskills__lng">
+      <h3>CSS</h3>
+      <p class="percentage">90%</p>
+    </div>
+    <div class="background">
+      <div class="background__css"></div>
+    </div>
+
+    <div class="myskills__lng">
+      <h3>Bootstrap</h3>
+      <p class="percentage">80%</p>
+    </div>
+    <div class="background">
+      <div class="background__boot"></div>
+    </div>
+  </div>
+  <div class="myskills__box">
+    <div class="myskills__lng">
+      <h3>JavaScript</h3>
+      <p class="percentage">80%</p>
+    </div>
+    <div class="background">
+      <div class="background__js"></div>
+    </div>
+
+    <div class="myskills__lng">
+      <h3>React.js</h3>
+      <p class="percentage">70%</p>
+    </div>
+    <div class="background">
+      <div class="background__react"></div>
+    </div>
+
+    <div class="myskills__lng">
+      <h3>Java</h3>
+      <p class="percentage">65%</p>
+    </div>
+    <div class="background">
+      <div class="background__java"></div>
+    </div>
+  </div>
+</div> -->

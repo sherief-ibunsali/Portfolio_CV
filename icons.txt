@@ -9,7 +9,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIABAMAAAAGVsnJAAAAGFBMVEVHcE
 JS:
 
 https://dinakaran.netlify.app/assets/javascript-CZQ9qdMR.png
-<img src="/assets/javascript-CZQ9qdMR.png" alt="JavaScript" class="object-contain w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32" style="max-width: 100%;">
+<img src="/assets/javascript-CZQ9qdMR.png" alt="JavaScript" class="skills__img" style="max-width: 100%;">
 
 
 CSS
@@ -19,4 +19,4 @@ CSS
 
 React:
 
-<img src="/assets/react-CpIRKijl.png" alt="ReactJS" class="object-contain w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32" style="max-width: 100%;">
+<img src="/assets/react-CpIRKijl.png" alt="ReactJS" class="skills__img" style="max-width: 100%;">

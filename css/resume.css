@@ -114,6 +114,7 @@ body {
 @media (max-width: 951px) {
   .header {
     justify-content: space-between;
+    padding: 12px;
   }
   .hamburger {
     display: block;
@@ -133,6 +134,9 @@ body {
     align-items: center;
     row-gap: 20px;
   }
+  .header__nav--name {
+    font-size: 21px;
+}
 
 }
 /* ***************************************** */

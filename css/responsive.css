@@ -114,7 +114,7 @@
         font-size: 40px;
     }
     .about__details--text{
-        font-size: 14px;
+        font-size: 16px;
     }
     .img__container--position{
     font-size: 25px;
@@ -290,6 +290,7 @@
 
 .copy__rights .copy__rights--text{
     font-size: 12px;
+    text-align: center;
 }
 }
 

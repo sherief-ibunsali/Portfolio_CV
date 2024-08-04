@@ -103,13 +103,13 @@ body {
   transform: translate(0) !important;
 }
 .hamburger--open .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(7.2px) rotate(45deg);
 }
 .hamburger--open .bar:nth-child(2) {
   opacity: 0;
 }
 .hamburger--open .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 @media (max-width: 951px) {
   .header {
